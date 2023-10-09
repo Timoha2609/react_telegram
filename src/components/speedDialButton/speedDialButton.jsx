@@ -11,7 +11,7 @@ export const SpeedDialButton = ({products,updateProducts}) => {
   const [visibleAdd, setVisibleAdd] = useState(false);
   const [visibleEdit, setVisibleEdit] = useState(false);
 
-  const[updateproducts]= useState([]);
+
   console.log(products)
   const actionItems = [
     { icon: 'pi pi-pencil', command: () => {setVisibleEdit(true)} },
