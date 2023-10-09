@@ -20,22 +20,22 @@ export const SpeedDialButton = (products) => {
     { icon: 'pi pi-trash', command: () => {setVisible3(true)} }
   ];
 
-const addHelecopter=(data)=>{
-    products.push(data)
-}
+// const addHelecopter=(data)=>{
+//     products.push(data)
+// }
 
-const deleteHelecopter=(id)=>{
-    products=products.filter(item=>item.id!==id)
-}
+// const deleteHelecopter=(id)=>{
+//     products=products.filter(item=>item.id!==id)
+// }
 
-const updateHelecopter=(id,data)=>{
-    products=products.map(item=>{
-        if(item.id===id){
-            return data
-        }
-        return item
-    })
-}
+// const updateHelecopter=(id,data)=>{
+//     products=products.map(item=>{
+//         if(item.id===id){
+//             return data
+//         }
+//         return item
+//     })
+// }
 
 
 console.log(products)
