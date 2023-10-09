@@ -37,9 +37,6 @@ export const SpeedDialButton = (products) => {
 //     })
 // }
 
-
-console.log(products)
-
   return (
     <div>
       <SpeedDial model={actionItems} visible={visible} onShow={() => setVisible(true)} onHide={() => setVisible(false)} className='speedButton' />
