@@ -1,5 +1,5 @@
 import { Dialog } from 'primereact/dialog'
-import { Button } from 'primereact/button'
+// import { Button } from 'primereact/button'
 
 export const ModalEdit = ({ product, onDelete, visible, setVisible }) => {
   return (
