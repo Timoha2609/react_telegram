@@ -31,13 +31,14 @@ export const SpeedDialButton = ({products,updateProducts}) => {
    updateProducts(updatedProducts);
   }
 
-  const updateHelicopter = (id, data) => {
-    products = products.map(item => {
-      if (item.id === id) {
-        return data
+  const updateHelicopter = (helicopterid,NewVertolet) => {
+    const updatedProducts = products.map(item => {
+      if (item.id === helicopterid) {
+        return NewVertolet
       }
       return item
     })
+    updateProducts(updatedProducts);
   }
 
   return (
