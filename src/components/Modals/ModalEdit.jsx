@@ -30,7 +30,7 @@ export const ModalEdit = ({ product, onChange, visible, setVisible }) => {
       <InputText value={helicopterprice} onChange={(e) => setHelicopterprice(e.target.value)} />
       <label>description</label>
       <InputText value={helicopterdescription} onChange={(e) => setHelicopterdescription(e.target.value)} />
-      <Button label="Добавить" onClick={changeVertolet} />
+      <Button label="Изменить" onClick={changeVertolet} />
     </Dialog>
   )
 }
