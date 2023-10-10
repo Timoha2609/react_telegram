@@ -19,8 +19,9 @@ export const SpeedDialButton = ({products,updateProducts}) => {
     { icon: 'pi pi-trash', command: () => { setVisibleDelete(true)} }
   ];
 
-  const addHelicopter = (data) => {
-    products.push(data)
+  const addHelicopter = (NewVertolet) => {
+    const updatedProducts = [...products, NewVertolet];
+    updateProducts(updatedProducts);
   }
 
   const deleteHelicopter = (helicopterId) => {
