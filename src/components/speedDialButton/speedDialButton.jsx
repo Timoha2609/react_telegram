@@ -5,7 +5,7 @@ import { ModalDelete } from '../Modals/ModalDelete';
 import { ModalAdd } from '../Modals/ModalAdd';
 import { ModalEdit } from '../Modals/ModalEdit';
 
-export const SpeedDialButton = ({products,updateProducts}) => {
+export const SpeedDialButton = ({products,obnovivertolet}) => {
   const [visible, setVisible] = useState(false);
   const [visibleDelete, setVisibleDelete] = useState(false);
   const [visibleAdd, setVisibleAdd] = useState(false);
@@ -20,25 +20,25 @@ export const SpeedDialButton = ({products,updateProducts}) => {
   ];
 
   const addHelicopter = (NewVertolet) => {
-    const updatedProducts = [...products, NewVertolet];
-    updateProducts(updatedProducts);
+    const dobavertolet = [...products, NewVertolet];
+    obnovivertolet(dobavertolet);
   }
 
   const deleteHelicopter = (helicopterId) => {
-  const updatedProducts = products.filter(item => item.id !== helicopterId)
+  const udalivertolet = products.filter(item => item.id !== helicopterId)
    console.log(`${helicopterId} внутри speed` )
    console.log(typeof(helicopterId))
-   updateProducts(updatedProducts);
+   obnovivertolet(udalivertolet);
   }
 
   const updateHelicopter = (helicopterid,NewVertolet) => {
-    const updatedProducts = products.map(item => {
+    const obnovlenivertoletov = products.map(item => {
       if (item.id === helicopterid) {
         return NewVertolet
       }
       return item
     })
-    updateProducts(updatedProducts);
+    obnovivertolet(obnovlenivertoletov);
   }
 
   return (

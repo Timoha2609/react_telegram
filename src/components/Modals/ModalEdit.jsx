@@ -16,7 +16,9 @@ export const ModalEdit = ({ product, onChange, visible, setVisible }) => {
         price:helicopterprice,
         description:helicopterdescription
   } 
+  
   onChange(helicopterid,NewVertolet);
+
   };
   return (
     <Dialog header="Header" visible={visible} style={{ width: '50vw' }} onHide={() => setVisible(false)}>

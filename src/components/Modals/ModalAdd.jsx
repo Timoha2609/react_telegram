@@ -18,6 +18,7 @@ export const ModalAdd = ({ product, onChange, visible, setVisible }) => {
         description:helicopterdescription
   } 
   onChange(NewVertolet);
+  
   };
   
   return (
